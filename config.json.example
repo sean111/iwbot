@@ -1,0 +1,9 @@
+{
+    "nickname": "iwbot",
+    "password": "oauth:stringhere",
+    "dbHost": "localhost",
+    "dbUser": "dbuser",
+    "dbPass": "dbpassword",
+    "dbName": "dbname",
+    "debug": true
+}

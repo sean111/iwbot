@@ -1,0 +1,30 @@
+{
+  "name": "IWBot",
+  "version": "0.1.0",
+  "description": "Twitch IRC bot for the TCG Infinity Wars",
+  "main": "iwbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sean111/iwbot.git"
+  },
+  "keywords": [
+    "twitch",
+    "infinity",
+    "wars",
+    "iw",
+    "bot"
+  ],
+  "author": "Sean Burke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sean111/iwbot/issues"
+  },
+  "homepage": "https://github.com/sean111/iwbot",
+  "dependencies": {
+    "mysql": "^2.5.4",
+    "twitch-irc": "^1.1.0"
+  }
+}
