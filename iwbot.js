@@ -1,3 +1,4 @@
+//#!/usr/bin/env node
 /*jslint node: true */
 "use strict";
 
@@ -61,7 +62,7 @@ client.addListener( 'chat', function( channel, user, message ) {
     var command = tmp.shift();
     var text = tmp.join( " " );
     var commandText = "command#" + command;
-    console.log( { command: commandText } );
+    //console.log( { command: commandText } );
     event.emit( commandText, channel, user, text );
 } );
 
@@ -76,6 +77,14 @@ client.addListener( 'mods', function( channel, mods ) {
 client.addListener( 'crash', function( message, stack ) {
     process.exit( 0 );
 } );
+
+/*client.addListener( 'ping', function() {
+    console.log( '-> PING! ');
+} );
+
+client.addListener( 'pong', function() {
+    console.log( '<- PONG! ');
+} );*/
 
 //Commands!
 event.on( "command#!test", function( channel, user, message ) {
